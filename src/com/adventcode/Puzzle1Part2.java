@@ -18,8 +18,8 @@ public class Puzzle1Part2 {
         int totalNumberOfTimesDialPassedThroughZero = 0;
 
         int currentDialDigit = DIAL_START_POINT;
-        List<String> CodeSequences = Arrays.stream(SEQUENCE.split("\n")).sequential().toList();
-        for(String sequence : CodeSequences){
+        List<String> codeSequences = Arrays.stream(SEQUENCE.split("\n")).sequential().toList();
+        for(String sequence : codeSequences){
 
             String direction = sequence.substring(0,1);
             int numberOfClicks = Integer.parseInt(sequence.substring(1));
